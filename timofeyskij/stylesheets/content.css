@@ -1,18 +1,10 @@
-article h1,
-article h2,
-article h3,
-article p,
-article ul,
-article blockquote {
+article > * {
   width: 700px;
   margin: 0 auto;
 }
 
-article h1,
-article h2,
-article h3 {
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: bold;
+article.content {
+  margin-top: -40px;
 }
 
 article h1 {
@@ -72,13 +64,13 @@ article blockquote {
 }
 
 article blockquote::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 3px;
   height: 100%;
   left: -20px;
-  background: rgba(0,0,0,.8)
+  background-color: black;
 }
 
 article p + p,
@@ -94,7 +86,7 @@ article ul {
 }
 
 article li {
-  margin: 17px 0 17px 30px;
+  margin: 17px 0 0 30px;
 }
 
 article a {
@@ -104,6 +96,7 @@ article a {
 article img {
   display: block;
   width: 1020px;
+  min-width: 768px;
   margin: 80px auto;
 }
 
